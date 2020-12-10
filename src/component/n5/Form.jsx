@@ -15,6 +15,7 @@ export default function Form() {
     );
 
     function changeHandler(event) {
+        console.log()
         setUser(prevState => ({
             ...prevState,
             [event.target.name]: event.target.value

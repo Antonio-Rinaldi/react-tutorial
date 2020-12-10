@@ -9,7 +9,6 @@ export default function N1() {
             <ClassComponent property="Class Component">
                 <p>Children Props</p>
             </ClassComponent>
-
             <FunctionalComponent property="Functional Component">
                 <p>Children Props</p>
             </FunctionalComponent>

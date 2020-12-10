@@ -10,5 +10,4 @@ export default function N2() {
           <ObjectState/>
         </div>
     );
-
 }

@@ -22,11 +22,3 @@ export default function FunctionalComponent(props) {
 //         </>
 //     );
 // }
-
-//----------------------------Arrow Function Syntax-------------------------------
-//
-// export default FunctionalComponent = props => (
-//     <>
-//         {/*Some Html*/}
-//     </>
-// );

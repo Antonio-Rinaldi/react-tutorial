@@ -4,7 +4,7 @@ export default function SideEffectOnce() {
 
     const initialPosition = {x: 0, y: 0};
     const [position, setPosition] = useState(initialPosition);
-    useEffect(() => changeMousePosition(), []);
+    useEffect(changeMousePosition, []);
 
     return (
         <>

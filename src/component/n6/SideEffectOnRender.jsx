@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Input from "../n5/Input";
+import Input from "./Input";
 
 export default function SideEffectOnRender() {
 

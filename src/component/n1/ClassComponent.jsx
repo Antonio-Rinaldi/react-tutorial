@@ -16,7 +16,8 @@ export default class ClassComponent extends Component {
     componentDidCatch(error, errorInfo) {}
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {}
-    getSnapshotBeforeUpdate(prevProps, prevState) {}
     componentDidUpdate(prevProps, prevState, snapshot) {}
+
+    componentWillUnmount() {}
 
 }
