@@ -7,10 +7,6 @@ export default class ErrorBoundary extends Component {
         this.state = {hasError: false};
     }
 
-    componentDidCatch(error, errorInfo) {
-        this.setState({hasError: true, error: error, errorInfo: errorInfo});
-    }
-
     render() {
         return this.state.hasError
             ? this.getFallBackUI()
@@ -20,9 +16,24 @@ export default class ErrorBoundary extends Component {
     getFallBackUI() {
         return (
             <div>
-                <p>Error boundary catch the error: '{this.state.error}' with message: '{this.state.errorInfo}'</p>
+                <p>Error boundary catch the error with message: '{this.state.error}'</p>
             </div>
         );
     }
+
+    componentDidCatch(error, errorInfo) {
+        console.error(`Error: ${error}`);
+        console.error(`Error Info: ${JSON.stringify(errorInfo)}`);
+        this.setState({hasError: true, error: error.message});
+    }
+
+    // static getDerivedStateFromError(error) {
+    //     return {hasError: true, error: error.message};
+    // }
+    //
+    // componentDidCatch(error, errorInfo) {
+    //     console.error(`Error: ${error}`);
+    //     console.error(`Error Info: ${JSON.stringify(errorInfo)}`);
+    // }
 }
 

@@ -5,13 +5,13 @@ export default function ErrorComponent({willThrowError}) {
     useEffect(throwError, [willThrowError]);
     return (
         <div>
-          <p>Error Component</p>
+          <p>Component did not throw any error</p>
         </div>
     );
 
     function throwError() {
         if(willThrowError) {
-            throw new Error("Error thrown");
+            throw new Error("An error has been thrown for test reasons");
         }
     }
 }

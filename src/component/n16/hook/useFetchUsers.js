@@ -4,7 +4,7 @@ import {stateSelector} from "../redux/stateSelector";
 import {useActions} from "./useActions";
 
 /*
-    Using useSelector hook we can get the store's state and save it into an object.
+    Using useSelector hook we can get the store's state and save it into an item.
     it takes as input a function of this type: [state => doSomething(state)]
  */
 export function useFetchUsers() {

@@ -1,4 +1,4 @@
-//Selector used to remap store state into an object to make code cleaner.
+//Selector used to remap store state into an item to make code cleaner.
 //It can also be used to connect store's state to component props. (See PageContent Component)
 export function stateSelector(state) {
     return {

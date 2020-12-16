@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux";
 
 /*
     Using useDispatch hook we can get the and then we put various actions into
-    an object to have them ready for cleaner code
+    an item to have them ready for cleaner code
  */
 export function useActions() {
     const dispatch = useDispatch();

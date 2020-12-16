@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Child({noParameterHandler, parameterHandler}) {
+
     return (
         <div>
             <button onClick={noParameterHandler}>Execute function with no parameters from Parent</button>

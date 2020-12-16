@@ -9,6 +9,7 @@ import N5 from "./component/n5/N5";
 import N6 from "./component/n6/N6";
 import N7 from "./component/n7/N7";
 import N8 from "./component/n8/N8";
+import N9 from "./component/n9/N9";
 import N10 from "./component/n10/N10";
 import N11 from "./component/n11/N11";
 import N12 from "./component/n12/N12";
@@ -32,7 +33,7 @@ export default function App() {
                     <Route exact path="/side-effects" component={N6}/>
                     <Route exact path="/css" component={N7}/>
                     <Route exact path="/refs" component={N8}/>
-                    {/*<Route exact path="/error-boundaries" component={N9}/>*/}
+                    <Route exact path="/error-boundaries" component={N9}/>
                     <Route exact path="/context" component={N10}/>
                     <Route exact path="/portals" component={N11}/>
                     <Route exact path="/performance" component={N12}/>

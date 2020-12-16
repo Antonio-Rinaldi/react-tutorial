@@ -9,7 +9,7 @@ export default function N1() {
             <ClassComponent property="Class Component">
                 <p>Children Props</p>
             </ClassComponent>
-            <FunctionalComponent property="Functional Component">
+            <FunctionalComponent property="Functional Component" a="ciao">
                 <p>Children Props</p>
             </FunctionalComponent>
         </div>

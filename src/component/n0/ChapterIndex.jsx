@@ -7,6 +7,7 @@ export default function ChapterIndex() {
     const history = useHistory();
     return (
         <nav>
+            <h2>React</h2>
             <ul className="ul">
                 <li><button id="component-types" className="link" onClick={navigateToUrl}>1.Class And Functional Components</button></li>
                 <li><button id="component-state" className="link" onClick={navigateToUrl}>2.Component State</button></li>
@@ -16,7 +17,7 @@ export default function ChapterIndex() {
                 <li><button id="side-effects" className="link" onClick={navigateToUrl}>6.Side Effects</button></li>
                 <li><button id="css" className="link" onClick={navigateToUrl}>7.Css and Styles</button></li>
                 <li><button id="refs" className="link" onClick={navigateToUrl}>8.Refs</button></li>
-                {/*<li><button id="error-boundaries" className="link">9.Error Boundaries</button></li>*/}
+                <li><button id="error-boundaries" className="link" onClick={navigateToUrl}>9.Error Boundaries</button></li>
                 <li><button id="context" className="link" onClick={navigateToUrl}>10.Context</button></li>
                 <li><button id="portals" className="link" onClick={navigateToUrl}>11.Portals</button></li>
                 <li><button id="performance" className="link" onClick={navigateToUrl}>12.Performance - Memo, useCallback, useMemo</button></li>

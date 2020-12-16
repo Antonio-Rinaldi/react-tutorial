@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useLayoutEffect, useRef} from "react";
 import ForwardRef from "./ForwardRef";
 import PropRef from "./PropRef";
 
@@ -7,9 +7,9 @@ export default function Ref() {
     const ref = useRef(null);
     const propRef = useRef(null);
     const forwardedRef = useRef(null);
-    useEffect(changeRefInnerHTML, []);
-    useEffect(changePropRefInnerHTML,[]);
-    useEffect(changeForwardedRefInnerHTML,[]);
+    useLayoutEffect(changeRefInnerHTML, []);
+    useLayoutEffect(changePropRefInnerHTML,[]);
+    useLayoutEffect(changeForwardedRefInnerHTML,[]);
 
     return (
         <div>

@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, {useLayoutEffect, useState} from "react";
 import Input from "./Input";
 
 export default function SideEffectOnRender() {
 
     const [title, setTitle] = useState("Default Title");
-    useEffect(changeTitle, [title]);
+    useLayoutEffect(changeTitle, [title]);
 
     return (
         <>
